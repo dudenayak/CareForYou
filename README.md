@@ -47,13 +47,14 @@
 ```shell
 # run yarn install or npm install
 npm install
+npm i -g nodemon
 ```
 
 ## 😻 Run CareForYou
 
 ```bash
 # to start CareForYou, type
-npm start
+npm start or nodemon app.js
 # or if you prefer yarn
 yarn start
 ```
