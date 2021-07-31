@@ -65,5 +65,9 @@ The page will reload if you make edits.
 
 Restart your app *(ctrl+c),* then `npm start and you're done - test it 🖖 🎉
 
+OR
+
+The website is live on : https://careforyou.azurewebsites.net
+
 ---
 
