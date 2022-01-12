@@ -127,7 +127,7 @@
   </head>
   <!-- Start of Async Drift Code -->
   <script>
-    "use strict";
+    'use strict';
 
     !(function () {
       var t = (window.driftt = window.drift = window.driftt || []);
@@ -136,21 +136,21 @@
           return void (
             window.console &&
             console.error &&
-            console.error("Drift snippet included twice.")
+            console.error('Drift snippet included twice.')
           );
         (t.invoked = !0),
           (t.methods = [
-            "identify",
-            "config",
-            "track",
-            "reset",
-            "debug",
-            "show",
-            "ping",
-            "page",
-            "hide",
-            "off",
-            "on",
+            'identify',
+            'config',
+            'track',
+            'reset',
+            'debug',
+            'show',
+            'ping',
+            'page',
+            'hide',
+            'off',
+            'on',
           ]),
           (t.factory = function (e) {
             return function () {
@@ -164,18 +164,18 @@
           (t.load = function (t) {
             var e = 3e5,
               n = Math.ceil(new Date() / e) * e,
-              o = document.createElement("script");
-            (o.type = "text/javascript"),
+              o = document.createElement('script');
+            (o.type = 'text/javascript'),
               (o.async = !0),
-              (o.crossorigin = "anonymous"),
-              (o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js");
-            var i = document.getElementsByTagName("script")[0];
+              (o.crossorigin = 'anonymous'),
+              (o.src = 'https://js.driftt.com/include/' + n + '/' + t + '.js');
+            var i = document.getElementsByTagName('script')[0];
             i.parentNode.insertBefore(o, i);
           });
       }
     })();
-    drift.SNIPPET_VERSION = "0.3.1";
-    drift.load("k44tmyexwdax");
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('k44tmyexwdax');
   </script>
   <!-- End of Async Drift Code -->
   <body>
@@ -195,9 +195,9 @@
             <ul>
               <li><a href="#hero" data-after="Home">Home</a></li>
               <li><a href="#services" data-after="Service">Services</a></li>
-              <li><a href="#projects" data-after="Team">Our Team</a></li>
+              <li><a href="#projects" data-after="Team">Team</a></li>
               <li><a href="#contact" data-after="Contact">Contact Us</a></li>
-              <li><a href="/signin" data-after="SignIn">Sign In</a></li>
+              <li><a href="signin.html" data-after="SignIn">Sign In</a></li>
             </ul>
           </div>
         </div>
@@ -212,7 +212,9 @@
           <h1>Hello, <span></span></h1>
           <h1>welcome to our <span></span></h1>
           <h1>Virtual Clinic <span></span></h1>
-          <a href="/signup" type="button" class="cta">Register To Book Appointment</a>
+          <a href="booking/book.html" type="button" class="cta"
+            >Book Appointment</a
+          >
         </div>
       </div>
     </section>
@@ -316,7 +318,7 @@
     <section id="projects">
       <div class="projects container">
         <div class="projects-header">
-          <h1 class="section-title">Our <span>Team</span></h1>
+          <h1 class="section-title"><span>Team</span></h1>
         </div>
         <div class="all-projects">
           <!-- <div class="project-item">
@@ -406,21 +408,26 @@
               <h1>Devesh Jain</h1>
               <h2>Full Stack Developer | UI/UX Designer</h2>
               <p>
-                I'm a Junior at Dr. Akhilesh Das Gupta Institute of Technology and Management pursuing B-Tech in Information and Technology. I'm a keen learner who loves to design and code. I'm currently improving my skills in Full Stack Development.
+                I'm a Junior at Dr. Akhilesh Das Gupta Institute of Technology
+                and Management pursuing B-Tech in Information and Technology.
+                I'm a keen learner who loves to design and code. I'm currently
+                improving my skills in Full Stack Development.
               </p>
               <div class="social">
-                <a href="https://twitter.com/dude_nayak" 
-                target="_blank">
-                <i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/dudenayak" 
-                target="_blank">
-                <i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/dude.nayak/"
-                target="_blank">
-                <i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/devesh-jain-b68b3119a"
-                target="_blank">
-                <i class="fab fa-linkedin"></i>
+                <a href="https://twitter.com/dude_nayak" target="_blank">
+                  <i class="fab fa-twitter"></i
+                ></a>
+                <a href="https://github.com/dudenayak" target="_blank">
+                  <i class="fab fa-github"></i
+                ></a>
+                <a href="https://www.instagram.com/dude.nayak/" target="_blank">
+                  <i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/devesh-jain-b68b3119a"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
                 </a>
               </div>
             </div>
@@ -488,7 +495,7 @@
         </div>
         <div class="container-contact1">
           <div class="contact1-pic js-tilt" data-tilt>
-            <img src="Contact/images/img-01.png" alt="IMG" />
+            <img src="Contact/images/img-01.jfif" alt="IMG" />
           </div>
 
           <form
@@ -729,7 +736,7 @@
     <!--===============================================================================================-->
     <script src="Contact/vendor/tilt/tilt.jquery.min.js"></script>
     <script>
-      $(".js-tilt").tilt({
+      $('.js-tilt').tilt({
         scale: 1.1,
       });
     </script>
